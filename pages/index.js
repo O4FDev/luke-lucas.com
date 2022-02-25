@@ -124,15 +124,15 @@ const Home = () => {
       <Navbar />
 
       <main className="flex flex-col justify-center text-center items-center py-16">
-        <h1 className="text-4xl font-semibold leading-tight w-2/3 lg:w-6/12 lg:text-8xl">
+        <h1 className="text-5xl font-semibold leading-tight w-10/12 lg:w-6/12 lg:text-8xl">
           Developer working on large problems
         </h1>
         
-        <div className="flex items-center gap-4 py-16">
+        <div className="flex items-center gap-4 py-8 lg:py-16">
           <p className="text-lg">
             Student at
           </p>
-          <img src="https://cdn.hildey.com/OU.png" className="w-24 object-cover" alt="The Open University" />
+          <img src="https://cdn.hildey.com/OU.png" className="w-20 lg:w-24 object-cover" alt="The Open University" />
         </div>
 
       </main>
