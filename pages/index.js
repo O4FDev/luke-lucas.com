@@ -35,7 +35,7 @@ const Navbar = () => {
                       setMenuOpen(!menuOpen)
                   }}
                   />
-                  <ul className="hidden md:flex gap-4 text-[16px] font-semibold">
+                  <ul className="hidden md:flex gap-4 text-[16px]">
                     {Links.map((link, index) => {
                       return (
                         <li key={index}>
