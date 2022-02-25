@@ -23,6 +23,8 @@ const Links = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [anyHovered, setAnyHovered] = useState(false);
   return (
       <div>
           <div className="flex flex-row justify-between p-12">
@@ -36,11 +38,36 @@ const Navbar = () => {
                   }}
                   />
                   <ul className="hidden md:flex gap-4 text-[16px]">
+
+                    {/* If anyIsHovered is false then just render normally, if one is hovered but not the current element give it a 0.3 opacity, if it is being hovered then render it normally. There should be an ease on the animation opactity of 0.2s */}
+                    
                     {Links.map((link, index) => {
                       return (
                         <li key={index}>
                           <Link href={link.link}>
-                            <a className="text-sm">{link.name}</a>
+                            <a 
+                              className={
+                                anyHovered ?
+                                // Set the elements that are not being hovered to have a 0.3 opacity
+                                (isHovered && anyHovered && anyHovered !== link.name) ?
+                                "text-gray-600 opacity-30 transition-opacity duration-300 ease-in-out" :
+                                // Set the current element to have a 1 opacity
+                                (isHovered && anyHovered && anyHovered === link.name) ?
+                                "text-gray-600 opacity-100" : "text-gray-600 opacity-30 transition-opacity duration-300 ease-in-out"
+                                :
+                                // Set the current element to have a 1 opacity
+                                (isHovered && !anyHovered && isHovered === link.name) ?
+                                "text-gray-600 opacity-100" : "text-gray-600 opacity-100"
+                              }
+                              onMouseEnter={() => {
+                                setIsHovered(true);
+                                setAnyHovered(link.name);
+                              }}
+                              onMouseLeave={() => {
+                                setIsHovered(false);
+                                setAnyHovered(false);
+                              }}
+                            >{link.name}</a>
                           </Link>
                         </li>
                       )})
