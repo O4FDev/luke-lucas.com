@@ -123,6 +123,7 @@ const Navbar = () => {
 const Home = () => {
 
   const [niceToMeetHovered, setNiceToMeetHovered] = useState(false);
+  const [placeholder, setPlaceholder] = useState(false);
 
   return (
     <div>
@@ -149,8 +150,13 @@ const Home = () => {
             "bg-[#f5f5f5] w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative" :
             "bg-[#f5f5f5] w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] relative m-12"
           }
-          onMouseEnter={() => { setNiceToMeetHovered(true) }} 
-          onMouseLeave={() => { setNiceToMeetHovered(false) }}
+          onMouseEnter={() => { if(niceToMeetHovered == false) { setNiceToMeetHovered(true); } setPlaceholder(true) }} 
+          onMouseLeave={() => { setPlaceholder(false); 
+            setTimeout(() => {
+              setNiceToMeetHovered(false);
+            }
+            , 300)
+          }}
         >
 
           <h1 
