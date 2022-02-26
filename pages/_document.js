@@ -6,15 +6,15 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://cdn.hildey.com/Hijrnotes.ttf"
+            href="https://cdn.hildey.com/Hijrnotes.woff"
             rel="stylesheet"
           />
           <link
-            href="https://cdn.hildey.com/Gilroy-SemiBold.ttf"
+            href="https://cdn.hildey.com/Gilroy-SemiBold.woff"
             rel="stylesheet"
           />
           <link
-            href="https://cdn.hildey.com/Gilroy-Regular.ttf"
+            href="https://cdn.hildey.com/Gilroy-Regular.woff"
             rel="stylesheet"
           />
         </Head>
