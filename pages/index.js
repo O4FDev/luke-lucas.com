@@ -26,7 +26,7 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [anyHovered, setAnyHovered] = useState(false);
   return (
-      <div>
+      <nav className="sticky">
           <div className="flex flex-row justify-between p-12 font-semibold">
               <div className="flex flex-row items-center">
                   <h1 className="text-2xl font-semibold">Luke Lucas</h1>
@@ -114,11 +114,14 @@ const Navbar = () => {
                   </div>
               </div>
           )}
-      </div>
+      </nav>
   );
 };
 
 const Home = () => {
+
+  const [niceToMeetHovered, setNiceToMeetHovered] = useState(false);
+
   return (
     <div>
       <Navbar />
@@ -134,8 +137,48 @@ const Home = () => {
           </p>
           <img src="https://cdn.hildey.com/OU.png" className="w-20 lg:w-24 object-cover" alt="The Open University" />
         </div>
-
       </main>
+
+      <section className="flex flex-col justify-center items-center py-16 w-full"
+        onMouseEnter={() => { setNiceToMeetHovered(true) }} 
+        onMouseLeave={() => { setNiceToMeetHovered(false) }}
+      >
+
+        <div 
+          className={
+            niceToMeetHovered ?
+            "bg-[#f5f5f5] w-10/12 lg:w-7/12 h-[50vh] lg:h-[85vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative" :
+            "bg-[#f5f5f5] w-10/12 lg:w-8/12 h-[50vh] lg:h-[90vh] relative m-12"
+          }
+          // onMouseEnter={() => { setNiceToMeetHovered(true) }} 
+          // onMouseLeave={() => { setNiceToMeetHovered(false) }}
+        >
+
+          <h1 
+          className={
+            niceToMeetHovered ?
+            "text-4xl font-semibold leading-tight p-12 lg:p-24 lg:text-5xl transition-p duration-300 ease-in-out" :
+            "text-4xl font-semibold leading-tight p-12 lg:text-5xl transition-p duration-300 ease-in-out"
+          }
+          >Nice to<br />meet you</h1>
+
+          <button
+            className={
+              niceToMeetHovered ?
+              "flex flex-col justify-center items-center p-12 lg:p-24 lg:text-5xl transition-p duration-300 ease-in-out absolute bottom-0" :
+              "flex flex-col justify-center items-center p-12 lg:text-5xl transition-p duration-300 ease-in-out absolute bottom-0"
+            }
+          >
+            <Link href="/about">
+                <span className="text-2xl font-semibold">About Me</span>
+            </Link>
+          </button>
+
+          <img src="https://cdn.hildey.com/Hobbing.png" alt="Test" className="absolute w-2/6 bottom-0 right-0" />
+
+        </div>
+
+      </section>
 
     </div>
   )
