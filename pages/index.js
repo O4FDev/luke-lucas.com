@@ -211,8 +211,9 @@ const Home = () => {
           className="w-full lg:w-10/12 h-20 my-10"
         >
           <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="h-full px-20" />
-          <img src="https://cdn.hildey.com/Clerk.png" alt="Rainoto"  className="h-full px-20" />
-          <img src="https://cdn.hildey.com/Haru.png" alt="Rainoto"  className="h-full px-20" />
+          <img src="https://cdn.hildey.com/Clerk.png" alt="Clerk"  className="h-full px-20" />
+          <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="h-full px-20" />
+          <img src="https://cdn.hildey.com/NoCode.png" alt="TailwindCSS NoCode"  className="h-full px-20" />
         </Marquee>
 
       </article>
