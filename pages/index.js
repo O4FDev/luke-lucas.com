@@ -76,6 +76,7 @@ const Navbar = () => {
               </div>
           </div>
           {menuOpen && (
+            <div className="h-screen">
               <div className="flex flex-col items-center justify-center absolute top-0 right-0 w-screen lg:w-2/5 h-full bg-white shadow-xl md:hidden">
                   <div className="flex flex-row justify-between items-center">
                       <div className="flex flex-row items-center">
@@ -113,6 +114,7 @@ const Navbar = () => {
                       </div>
                   </div>
               </div>
+            </div>
           )}
       </nav>
   );
