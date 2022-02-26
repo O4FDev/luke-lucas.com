@@ -144,8 +144,8 @@ const Home = () => {
         <div 
           className={
             niceToMeetHovered ?
-            "bg-[#f5f5f5] w-10/12 lg:w-7/12 h-[50vh] lg:h-[85vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative" :
-            "bg-[#f5f5f5] w-10/12 lg:w-8/12 h-[50vh] lg:h-[90vh] relative m-12"
+            "bg-[#f5f5f5] w-10/12 lg:w-9/12 h-[50vh] lg:h-[85vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative" :
+            "bg-[#f5f5f5] w-10/12 lg:w-10/12 h-[50vh] lg:h-[90vh] relative m-12"
           }
           onMouseEnter={() => { setNiceToMeetHovered(true) }} 
           onMouseLeave={() => { setNiceToMeetHovered(false) }}
