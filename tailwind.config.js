@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Gilroy", "sans-serif"],
+        serif: ["Hijrnotes PERSONAL USE ONLY", "serif"],
       }
     },
   },
