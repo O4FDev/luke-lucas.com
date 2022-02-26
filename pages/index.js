@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 const Links = [
   {
     name: "Work",
-    link: "/work",
+    link: "#work",
   },
   {
     name: "About",
@@ -134,8 +134,8 @@ const Home = () => {
       <Navbar />
 
       <main className="flex flex-col justify-center text-center items-center py-16">
-        <h1 className="text-5xl font-semibold leading-tight w-10/12 lg:w-6/12 lg:text-8xl">
-          Developer working on large problems
+        <h1 className="text-5xl font-semibold leading-tight w-12/12 lg:w-8/12 lg:text-8xl">
+          Frontend developer working on large problems
         </h1>
 
         <div className="flex items-center gap-4 py-8 lg:py-16">
@@ -199,7 +199,7 @@ const Home = () => {
         </div>
       </section>
       
-      <article className="flex flex-col text-center justify-center">
+      <article className="flex flex-col text-center justify-center" id="work">
         <h1 className="text-4xl font-semibold leading-tight p-12 lg:p-24 lg:text-6xl transition-p duration-300 ease-in-out">
           Experience
         </h1>
