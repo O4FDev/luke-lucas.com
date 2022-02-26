@@ -26,7 +26,7 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [anyHovered, setAnyHovered] = useState(false);
   return (
-      <nav className="sticky">
+      <nav className="">
           <div className="flex flex-row justify-between p-12 font-semibold">
               <div className="flex flex-row items-center">
                   <h1 className="text-2xl font-semibold">Luke Lucas</h1>
