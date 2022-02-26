@@ -134,7 +134,7 @@ const Home = () => {
       <Navbar />
 
       <main className="flex flex-col justify-center text-center items-center py-16">
-        <h1 className="text-5xl font-semibold leading-tight w-12/12 lg:w-8/12 lg:text-8xl">
+        <h1 className="text-5xl font-semibold px-6 lg:px-0 leading-tight w-12/12 lg:w-8/12 lg:text-8xl">
           Frontend developer working on large problems
         </h1>
 
