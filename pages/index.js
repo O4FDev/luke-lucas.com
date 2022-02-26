@@ -207,7 +207,7 @@ const Home = () => {
         {/* Carousel */}
         <Marquee
           direction="right"
-          speed={10}
+          speed={40}
           className="w-full lg:w-10/12 h-20 my-10"
         >
           <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="h-full px-20" />
