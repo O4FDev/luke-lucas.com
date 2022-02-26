@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Hijrnotes PERSONAL USE ONLY';
+    src: url('https://cdn.hildey.com/Hijrnotes.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.hildey.com/Gilroy-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('https://cdn.hildey.com/Gilroy-SemiBold.ttf');
+    font-weight: 600;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
