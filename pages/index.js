@@ -164,7 +164,7 @@ const Home = () => {
           <button
             className={
               niceToMeetHovered ?
-              "flex flex-col justify-center items-center p-12 lg:p-24 lg:text-5xl transition-p duration-300 ease-in-out absolute bottom-0" :
+              "flex flex-col justify-center items-center px-12 lg:p-24 lg:text-5xl transition-p duration-300 ease-in-out absolute lg:bottom-0" :
               "flex flex-col justify-center items-center px-12 lg:p-12 lg:text-5xl transition-p duration-300 ease-in-out absolute lg:bottom-0"
             }
           >
