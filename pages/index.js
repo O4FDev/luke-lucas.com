@@ -183,8 +183,8 @@ const Home = () => {
           <button
             className={
               niceToMeetHovered
-                ? "flex flex-col justify-center items-center px-12 lg:p-24 lg:text-5xl transition-p duration-300 ease-in-out absolute lg:bottom-0"
-                : "flex flex-col justify-center items-center px-12 lg:p-12 lg:text-5xl transition-p duration-300 ease-in-out absolute lg:bottom-0"
+                ? "flex flex-col justify-center items-center mx-12 lg:m-24 lg:text-5xl transition-m duration-300 ease-in-out absolute lg:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+                : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute lg:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
             }
           >
             <Link href="/about">
