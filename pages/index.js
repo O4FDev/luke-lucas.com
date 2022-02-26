@@ -139,10 +139,7 @@ const Home = () => {
         </div>
       </main>
 
-      <section className="flex flex-col justify-center items-center py-16 w-full"
-        onMouseEnter={() => { setNiceToMeetHovered(true) }} 
-        onMouseLeave={() => { setNiceToMeetHovered(false) }}
-      >
+      <section className="flex flex-col justify-center items-center py-16 w-full">
 
         <div 
           className={
@@ -150,8 +147,8 @@ const Home = () => {
             "bg-[#f5f5f5] w-10/12 lg:w-7/12 h-[50vh] lg:h-[85vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative" :
             "bg-[#f5f5f5] w-10/12 lg:w-8/12 h-[50vh] lg:h-[90vh] relative m-12"
           }
-          // onMouseEnter={() => { setNiceToMeetHovered(true) }} 
-          // onMouseLeave={() => { setNiceToMeetHovered(false) }}
+          onMouseEnter={() => { setNiceToMeetHovered(true) }} 
+          onMouseLeave={() => { setNiceToMeetHovered(false) }}
         >
 
           <h1 
@@ -166,15 +163,15 @@ const Home = () => {
             className={
               niceToMeetHovered ?
               "flex flex-col justify-center items-center p-12 lg:p-24 lg:text-5xl transition-p duration-300 ease-in-out absolute bottom-0" :
-              "flex flex-col justify-center items-center p-12 lg:text-5xl transition-p duration-300 ease-in-out absolute bottom-0"
+              "flex flex-col justify-center items-center px-12 lg:p-12 lg:text-5xl transition-p duration-300 ease-in-out absolute lg:bottom-0"
             }
           >
             <Link href="/about">
-                <span className="text-2xl font-semibold">About Me</span>
+                <span className="text-2xl font-semibold z-1">About Me</span>
             </Link>
           </button>
 
-          <img src="https://cdn.hildey.com/Hobbing.png" alt="Test" className="absolute w-2/6 bottom-0 right-0" />
+          <img src="https://cdn.hildey.com/Luke.png" alt="Test" className="absolute w-2/6 lg:w-3/12 rounded-sm bottom-0 right-0" />
 
         </div>
 
