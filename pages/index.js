@@ -151,7 +151,7 @@ const Home = () => {
 
       <main className="flex flex-col justify-center text-center items-center py-16">
         <h1 className="text-5xl font-semibold px-6 lg:px-0 leading-tight w-12/12 lg:w-8/12 lg:text-8xl">
-          Frontend developer working on large problems
+          Fullstack developer working on large problems
         </h1>
 
         <div className="flex items-center gap-4 py-8 lg:py-16">
