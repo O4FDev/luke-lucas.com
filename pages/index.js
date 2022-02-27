@@ -205,11 +205,11 @@ const Home = () => {
         </h1>
 
         <div className="flex md:hidden justify-center my-8 md:my-0">
+          <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="block md:hidden h-12 px-5" />
           <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="block md:hidden h-12 px-5" />
-          <img src="https://cdn.hildey.com/Clerk.png" alt="Clerk"  className="block md:hidden h-12 px-5" />
         </div>
         <div className="flex md:hidden justify-center my-10 md:my-0">
-          <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="block md:hidden h-12 px-5" />
+          <img src="https://cdn.hildey.com/Clerk.png" alt="Clerk"  className="block md:hidden h-12 px-5" />
           <img src="https://cdn.hildey.com/NoCode.png" alt="TailwindCSS NoCode"  className="block md:hidden h-12 px-5" />
         </div>
 
