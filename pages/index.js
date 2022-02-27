@@ -204,16 +204,25 @@ const Home = () => {
           Experience
         </h1>
 
+        <div className="flex md:hidden justify-center my-8 md:my-0">
+          <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="block md:hidden h-12 px-5" />
+          <img src="https://cdn.hildey.com/Clerk.png" alt="Clerk"  className="block md:hidden h-12 px-5" />
+        </div>
+        <div className="flex md:hidden justify-center my-10 md:my-0">
+          <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="block md:hidden h-12 px-5" />
+          <img src="https://cdn.hildey.com/NoCode.png" alt="TailwindCSS NoCode"  className="block md:hidden h-12 px-5" />
+        </div>
+
         {/* Carousel */}
         <Marquee
           direction="right"
           speed={80}
-          className="w-full lg:w-10/12 h-20 my-10"
+          className="hidden md:block md:w-full lg:w-10/12 md:h-20 md:my-10"
         >
-          <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="h-full px-10" />
-          <img src="https://cdn.hildey.com/Clerk.png" alt="Clerk"  className="h-full px-10" />
-          <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="h-full px-10" />
-          <img src="https://cdn.hildey.com/NoCode.png" alt="TailwindCSS NoCode"  className="h-full px-10" />
+          <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="hidden md:block h-full px-10" />
+          <img src="https://cdn.hildey.com/Clerk.png" alt="Clerk"  className="hidden md:block h-full px-10" />
+          <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="hidden md:block h-full px-10" />
+          <img src="https://cdn.hildey.com/NoCode.png" alt="TailwindCSS NoCode"  className="hidden md:block h-full px-10" />
         </Marquee>
 
       </article>
