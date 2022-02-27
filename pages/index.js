@@ -493,4 +493,5 @@ const Home = () => {
   );
 };
 
+export {Navbar};
 export default Home;
