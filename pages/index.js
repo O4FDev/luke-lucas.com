@@ -155,12 +155,7 @@ const Home = () => {
         </h1>
 
         <div className="flex items-center gap-4 py-8 lg:py-16">
-          <p className="text-lg">Student at</p>
-          <img
-            src="https://cdn.hildey.com/OU.png"
-            className="w-20 lg:w-24 object-cover"
-            alt="The Open University"
-          />
+          <p className="text-lg">Actively seeking jobs</p>
         </div>
       </main>
 
@@ -301,7 +296,7 @@ const Home = () => {
                 : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-green-800 px-4 py-2 rounded-full"
             }
           >
-            <Link href="/about">
+            <Link href="https://cdn.hildey.com/CV.pdf">
               <span className="text-2xl font-semibold z-1">What I did</span>
             </Link>
           </button>
@@ -475,7 +470,7 @@ const Home = () => {
                 : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
             }
           >
-            <Link href="https://github.com/O4FDev/clerk-expo-starter/tree/JavaScript">
+            <Link href="https://luke-nocode.com">
               <span className="text-2xl font-semibold z-1">View it</span>
             </Link>
           </button>
