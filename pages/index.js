@@ -24,8 +24,10 @@ const Links = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const [isHovered, setIsHovered] = useState(false);
   const [anyHovered, setAnyHovered] = useState(false);
+
   return (
     <nav className="">
       <div className="flex flex-row justify-between p-12 font-semibold">
@@ -131,7 +133,17 @@ const Home = () => {
   const [niceToMeetHovered, setNiceToMeetHovered] = useState(false);
   const [placeholder, setPlaceholder] = useState(false);
 
-  const [scrollAmount, setScrollAmount] = useState(0);
+  const [rainotoHovered, setRainotoHovered] = useState(false);
+  const [rPlaceholder, setRPlaceholder] = useState(false);
+
+  const [haruHovered, setHaruHovered] = useState(false);
+  const [hPlaceholder, setHPlaceholder] = useState(false);
+
+  const [clerkHovered, setClerkHovered] = useState(false);
+  const [cPlaceholder, setCPlaceholder] = useState(false);
+
+  const [tailwindHovered, setTailwindHovered] = useState(false);
+  const [tPlaceholder, setTPlaceholder] = useState(false);
 
   return (
     <div>
@@ -206,7 +218,7 @@ const Home = () => {
       
       <div className="flex justify-center my-6 md:my-12">
         <h1 className="text-2xl leading-tight font-semibold p-12 lg:p-24 lg:text-4xl transition-p duration-300 ease-in-out md:w-6/12 text-center">
-          By designing accessible interfaces, I make digital products usable for everyone.
+        I am devoted to creating fast and accessible websites that are visually appealing.
         </h1>
       </div>
       
@@ -235,7 +247,245 @@ const Home = () => {
 
       </article>
 
-      <section className="flex md:justify-between items-center h-full w-full p-12" id="skills">
+      <section className="" id="projects">
+
+            {/* This is the projects section, it has boxes like the about me in the format of:
+               x
+              x x
+               x
+            */}
+
+      <section className="flex flex-row justify-center items-center py-16 w-full text-green-800">
+        <div
+          className={
+            haruHovered
+              ? "bg-green-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
+              : "bg-green-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+          }
+          onMouseEnter={() => {
+            if (haruHovered == false) {
+              setHaruHovered(true);
+            }
+            setHPlaceholder(true);
+          }}
+          onMouseLeave={() => {
+            setHPlaceholder(false);
+            setTimeout(() => {
+              setHaruHovered(false);
+            }, 300);
+          }}
+        >
+          <h1
+            className={
+              haruHovered
+                ? "text-4xl font-semibold leading-tight px-12 pt-12 lg:px-24 lg:pt-24 lg:text-6xl transition-p duration-300 ease-in-out"
+                : "text-4xl font-semibold leading-tight px-12 pt-12 lg:text-6xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Haru
+          </h1>
+
+          <h3
+            className={
+              haruHovered
+                ? "text-xl font-semibold leading-tight p-12 lg:px-24 lg:py-4 lg:text-3xl transition-p duration-300 ease-in-out"
+                : "text-xl font-semibold leading-tight px-12 pt-4 lg:text-3xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Software Engineering Internship</h3>
+
+          <button
+            className={
+              haruHovered
+                ? "flex flex-col justify-center items-center mx-12 lg:m-24 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-green-800 px-4 py-2 rounded-full"
+                : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-green-800 px-4 py-2 rounded-full"
+            }
+          >
+            <Link href="/about">
+              <span className="text-2xl font-semibold z-1">What I did</span>
+            </Link>
+          </button>
+          <img
+            src="https://cdn.hildey.com/HaruScreenshot.png"
+            alt=""
+            className="hidden md:block md:absolute w-2/6 lg:w-2/12 bottom-12 right-2 md:right-12 rounded-xl"
+          />
+        </div>
+      </section>
+
+      <section className="flex flex-col justify-center items-center py-16 w-full">
+        <div
+          className={
+            rainotoHovered
+              ? "bg-blue-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
+              : "bg-blue-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+          }
+          onMouseEnter={() => {
+            if (rainotoHovered == false) {
+              setRainotoHovered(true);
+            }
+            setRPlaceholder(true);
+          }}
+          onMouseLeave={() => {
+            setRPlaceholder(false);
+            setTimeout(() => {
+              setRainotoHovered(false);
+            }, 300);
+          }}
+        >
+          <h1
+            className={
+              haruHovered
+                ? "text-4xl font-semibold leading-tight px-12 pt-12 lg:px-24 lg:pt-24 lg:text-6xl transition-p duration-300 ease-in-out"
+                : "text-4xl font-semibold leading-tight px-12 pt-12 lg:text-6xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Rainoto
+          </h1>
+
+          <h3
+            className={
+              haruHovered
+                ? "text-xl font-semibold leading-tight p-12 lg:px-24 lg:py-4 lg:text-3xl transition-p duration-300 ease-in-out"
+                : "text-xl font-semibold leading-tight px-12 pt-4 lg:text-3xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Founder</h3>
+
+            <button
+            className={
+              haruHovered
+                ? "flex flex-col justify-center items-center mx-12 lg:m-24 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+                : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+            }
+          >
+            <Link href="https://rainoto.com">
+              <span className="text-2xl font-semibold z-1">View it</span>
+            </Link>
+          </button>
+          <img
+            src="https://cdn.hildey.com/Rainoto.png"
+            alt=""
+            className="hidden md:block md:absolute w-2/6 lg:w-2/12 bottom-12 right-2 md:right-12 rounded-xl"
+          />
+        </div>
+      </section>
+
+      <section className="flex flex-col justify-center items-center py-16 w-full">
+        <div
+          className={
+            clerkHovered
+              ? "bg-red-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
+              : "bg-red-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+          }
+          onMouseEnter={() => {
+            if (rainotoHovered == false) {
+              setClerkHovered(true);
+            }
+            setCPlaceholder(true);
+          }}
+          onMouseLeave={() => {
+            setCPlaceholder(false);
+            setTimeout(() => {
+              setClerkHovered(false);
+            }, 300);
+          }}
+        >
+          <h1
+            className={
+              clerkHovered
+                ? "text-4xl font-semibold leading-tight px-12 pt-12 lg:px-24 lg:pt-24 lg:text-6xl transition-p duration-300 ease-in-out"
+                : "text-4xl font-semibold leading-tight px-12 pt-12 lg:text-6xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Clerk
+          </h1>
+
+          <h3
+            className={
+              clerkHovered
+                ? "text-xl font-semibold leading-tight p-12 lg:px-24 lg:py-4 lg:text-3xl transition-p duration-300 ease-in-out"
+                : "text-xl font-semibold leading-tight px-12 pt-4 lg:text-3xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Open Source Contributor</h3>
+
+            <button
+            className={
+              clerkHovered
+                ? "flex flex-col justify-center items-center mx-12 lg:m-24 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+                : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+            }
+          >
+            <Link href="https://github.com/O4FDev/clerk-expo-starter/tree/JavaScript">
+              <span className="text-2xl font-semibold z-1">View it</span>
+            </Link>
+          </button>
+          <img
+            src="https://cdn.hildey.com/Clerk.png"
+            alt=""
+            className="hidden md:block md:absolute w-2/6 lg:w-2/12 bottom-12 right-2 md:right-12 rounded-xl"
+          />
+        </div>
+      </section>
+
+      <section className="flex flex-col justify-center items-center py-16 w-full">
+        <div
+          className={
+            tailwindHovered
+              ? "bg-pink-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
+              : "bg-pink-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+          }
+          onMouseEnter={() => {
+            if (tailwindHovered == false) {
+              setTailwindHovered(true);
+            }
+            setTPlaceholder(true);
+          }}
+          onMouseLeave={() => {
+            setTPlaceholder(false);
+            setTimeout(() => {
+              setTailwindHovered(false);
+            }, 300);
+          }}
+        >
+          <h1
+            className={
+              tailwindHovered
+                ? "text-4xl font-semibold leading-tight px-12 pt-12 lg:px-24 lg:pt-24 lg:text-6xl transition-p duration-300 ease-in-out"
+                : "text-4xl font-semibold leading-tight px-12 pt-12 lg:text-6xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Tailwind NoCode
+          </h1>
+
+          <h3
+            className={
+              tailwindHovered
+                ? "text-xl font-semibold leading-tight p-12 lg:px-24 lg:py-4 lg:text-3xl transition-p duration-300 ease-in-out"
+                : "text-xl font-semibold leading-tight px-12 pt-4 lg:text-3xl transition-p duration-300 ease-in-out"
+            }
+          >
+            Founder</h3>
+
+            <button
+            className={
+              haruHovered
+                ? "flex flex-col justify-center items-center mx-12 lg:m-24 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+                : "flex flex-col justify-center items-center mx-12 lg:m-12 lg:text-5xl transition-m duration-300 ease-in-out absolute bottom-12 md:bottom-0 border border-gray-900 px-4 py-2 rounded-full"
+            }
+          >
+            <Link href="https://github.com/O4FDev/clerk-expo-starter/tree/JavaScript">
+              <span className="text-2xl font-semibold z-1">View it</span>
+            </Link>
+          </button>
+          <img
+            src="https://cdn.hildey.com/NoCode.png"
+            alt=""
+            className="hidden md:block md:absolute w-2/6 lg:w-2/12 bottom-12 right-2 md:right-12 rounded-xl"
+          />
+        </div>
+      </section>
 
       </section>
 
