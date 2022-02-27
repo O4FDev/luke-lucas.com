@@ -250,12 +250,12 @@ const Home = () => {
                x
             */}
 
-      <section className="flex flex-row justify-center items-center py-16 w-full text-green-800">
+      <section className="flex flex-row justify-center items-center py-6 md:py-16 w-full text-green-800">
         <div
           className={
             haruHovered
               ? "bg-green-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
-              : "bg-green-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+              : "bg-green-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative md:m-12"
           }
           onMouseEnter={() => {
             if (haruHovered == false) {
@@ -308,12 +308,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center py-16 w-full">
+      <section className="flex flex-col justify-center items-center py-6 md:py-16 w-full">
         <div
           className={
             rainotoHovered
               ? "bg-blue-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
-              : "bg-blue-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+              : "bg-blue-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative md:m-12"
           }
           onMouseEnter={() => {
             if (rainotoHovered == false) {
@@ -366,12 +366,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center py-16 w-full">
+      <section className="flex flex-col justify-center items-center py-6 md:py-16 w-full">
         <div
           className={
             clerkHovered
               ? "bg-red-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
-              : "bg-red-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+              : "bg-red-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative md:m-12"
           }
           onMouseEnter={() => {
             if (rainotoHovered == false) {
@@ -424,12 +424,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center py-16 w-full">
+      <section className="flex flex-col justify-center items-center py-6 md:py-16 w-full">
         <div
           className={
             tailwindHovered
               ? "bg-pink-50 w-10/12 lg:w-7/12 h-[50vh] lg:h-[68vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative"
-              : "bg-pink-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative m-12"
+              : "bg-pink-50 w-10/12 lg:w-8/12 h-[50vh] lg:h-[70vh] lg:transition-w lg:transition-h lg:duration-500 lg:ease-in-out relative md:m-12"
           }
           onMouseEnter={() => {
             if (tailwindHovered == false) {
