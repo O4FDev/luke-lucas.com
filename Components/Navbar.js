@@ -5,7 +5,7 @@ import { useState } from "react";
 const Links = [
   {
     name: "Work",
-    link: "#work",
+    link: "/",
   },
   {
     name: "About",
