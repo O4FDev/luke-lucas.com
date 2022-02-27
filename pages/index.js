@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
 const Links = [
@@ -13,13 +13,13 @@ const Links = [
     link: "/about",
   },
   {
-    name: "Blog",
-    link: "/blog",
-  },
-  {
     name: "Contact",
     link: "/contact",
   },
+  {
+    name: "Resume",
+    link: "https://cdn.hildey.com/CV.pdf",
+  }
 ];
 
 const Navbar = () => {
@@ -30,7 +30,9 @@ const Navbar = () => {
     <nav className="">
       <div className="flex flex-row justify-between p-12 font-semibold">
         <div className="flex flex-row items-center">
-          <h1 className="text-2xl font-semibold font-serif">Luke Lucas</h1>
+          <Link href="/">
+            <h1 className="text-2xl font-semibold font-serif cursor-pointer">Luke Lucas</h1>
+          </Link>
         </div>
         <div className="flex flex-row items-center">
           <MenuIcon
@@ -129,6 +131,8 @@ const Home = () => {
   const [niceToMeetHovered, setNiceToMeetHovered] = useState(false);
   const [placeholder, setPlaceholder] = useState(false);
 
+  const [scrollAmount, setScrollAmount] = useState(0);
+
   return (
     <div>
       <Navbar />
@@ -199,12 +203,16 @@ const Home = () => {
         </div>
       </section>
       
-      <article className="flex flex-col text-center justify-center" id="work">
-        <h1 className="text-4xl font-semibold leading-tight p-12 lg:p-24 lg:text-6xl transition-p duration-300 ease-in-out">
-          Experience
+      
+      <div className="flex justify-center my-6 md:my-12">
+        <h1 className="text-2xl leading-tight font-semibold p-12 lg:p-24 lg:text-4xl transition-p duration-300 ease-in-out md:w-6/12 text-center">
+          By designing accessible interfaces, I make digital products usable for everyone.
         </h1>
+      </div>
+      
+      <article className="flex flex-col text-center justify-center" id="work">
 
-        <div className="flex md:hidden justify-center my-8 md:my-0">
+        <div className="flex md:hidden justify-center my-12 md:my-24">
           <img src="https://cdn.hildey.com/Haru.png" alt="Haru"  className="block md:hidden h-12 px-5" />
           <img src="https://cdn.hildey.com/Rainoto.png" alt="Rainoto" className="block md:hidden h-12 px-5" />
         </div>
@@ -226,6 +234,11 @@ const Home = () => {
         </Marquee>
 
       </article>
+
+      <section className="flex md:justify-between items-center h-full w-full p-12" id="skills">
+
+      </section>
+
     </div>
   );
 };
