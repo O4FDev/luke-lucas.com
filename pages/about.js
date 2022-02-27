@@ -145,7 +145,7 @@ const About = () => {
                     >
                         Hello
                     </h1>
-                    My name is Luke, and I'm a software developer.
+                    My name is Luke, and Im a software developer.
 
                     <br />
                     <br />

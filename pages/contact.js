@@ -9,7 +9,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-4 px-12 font-bold text-left text-4xl lg:text-4xl lg:gap-8">
                     <div>
                         <h1>
-                            Lets connect
+                            Let's connect
                         </h1>
                         <h3
                             className='text-sm py-2'
