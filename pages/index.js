@@ -301,7 +301,7 @@ const Home = () => {
             </Link>
           </button>
           <img
-            src="https://cdn.hildey.com/HaruScreenshot.png"
+            src="https://cdn.hildey.com/Haru.jpg"
             alt=""
             className="hidden md:block md:absolute w-2/6 lg:w-2/12 bottom-12 right-2 md:right-12 rounded-xl"
           />
