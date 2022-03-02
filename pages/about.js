@@ -88,7 +88,7 @@ const Navbar = () => {
             <div className="flex flex-row justify-between items-center">
               <div className="flex flex-row items-center">
                 <XIcon
-                  className="h-5 w-5 absolute right-12 top-12"
+                  className="h-5 w-5 fixed right-12 top-12 text-gray-800"
                   onClick={() => {
                     setMenuOpen(!menuOpen);
                   }}
@@ -102,7 +102,7 @@ const Navbar = () => {
                     return (
                       <div key={index}>
                         <Link href={link.link}>
-                          <a className="">{link.name}</a>
+                          <a className="text-gray-800">{link.name}</a>
                         </Link>
                       </div>
                     );

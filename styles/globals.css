@@ -1,18 +1,24 @@
 @font-face {
     font-family: 'Hijrnotes PERSONAL USE ONLY';
-    src: url('https://cdn.hildey.com/Hijrnotes.ttf');
+    src: url('../Fonts/Hijrnotes.ttf');
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('https://cdn.hildey.com/Gilroy-Regular.ttf');
+    src: url('../Fonts/Gilroy-Regular.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('https://cdn.hildey.com/Gilroy-SemiBold.ttf');
+    src: url('../Fonts/Gilroy-SemiBold.ttf');
     font-weight: 600;
+}
+  
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Fonts/Gilroy-Bold.ttf');
+    font-weight: 700;
 }
 
 @tailwind base;
